@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body { background-color: #f9f9f9; color: #333; }
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+nav.sticky {
+    background: white;
+    padding: 10px 10%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+nav .logo { font-size: 24px; font-weight: 600; }
+nav .logo span { color: #e67e22; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 30px; }
+nav ul li a { text-decoration: none; color: #333; font-weight: 400; }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+}
+
+.hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; }
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Menu Section */
+#menu { padding: 100px 10%; text-align: center; }
+.section-title { margin-bottom: 50px; font-size: 2rem; }
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.menu-card:hover { transform: translateY(-10px); }
+.menu-img {
+    height: 200px;
+    background: #eee;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.price { display: block; margin-top: 15px; font-weight: 600; color: #e67e22; }
+
+img {
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
